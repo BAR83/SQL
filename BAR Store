@@ -1,0 +1,79 @@
+--Create store database
+
+/** BAR Store:
+Dresses (10)
+Shoes (20)
+Lingerie (30)
+Handbags (5)
+Accessories (7);
+**/
+CREATE TABLE BARStore (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER);
+
+INSERT INTO BARStore VALUES (200, "Dresses", 10);
+INSERT INTO BARStore VALUES (500, "Shoes", 20);
+INSERT INTO BARStore VALUES (800, "Lingerie", 30);
+INSERT INTO BARStore VALUES (1500, "Handbags", 5);
+INSERT INTO BARStore VALUES (250, "Accessories", 7);
+
+SELECT * FROM BARStore;
+
+SELECT * FROM BARStore 
+WHERE id < 1500
+ORDER BY QUANTITY DESC;
+
+DATABASE SCHEMA
+
+BARStore 5 rows
+id (PK) INTEGER
+name TEXT
+quantity INTEGER
+QUERY RESULTS
+
+id	name	quantity
+200	Dresses	10
+250	Accessories	7
+500	Shoes	20
+800	Lingerie	30
+1500	Handbags	5
+id	name	quantity
+800	Lingerie	30
+500	Shoes	20
+200	Dresses	10
+250	Accessories	7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
